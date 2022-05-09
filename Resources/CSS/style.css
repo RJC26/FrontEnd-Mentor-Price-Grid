@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+:root{
+    --btn-bg-hover: hsl(71, 100%, 62%);
+    --btn-text-hover: hsl(0, 0%, 60%);
+    --gray-text: hsl(0, 0%, 65%);
+    --per-month: hsla(180, 100%, 94%, 0.518);
+    --white-h3: hsl(180, 100%, 94%);
+    --white-text: hsl(0, 0%, 100%);
+    --pargraph-main: hsl(225, 11%, 86%);
+    --btn-h2: hsl(71, 73%, 54%);
+    --bg-monthly: hsl(179, 61%, 44%);
+    --bg-why-us: hsl(179, 47%, 52%);
+    --h1-white-bg: hsl(176, 45%, 47%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 203, 209);
+    margin: 2rem 0;
+}
+main{
+    width: 90%;
+}
+button{
+    background-color: var(--btn-h2);
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    border-radius: 5px;
+    color: var(--white-text);
+    box-shadow: 0px 3px 8px 2px rgba(65, 65, 65, 0.214);
+}
+button:hover{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text-hover); 
+}
+/* Utility */
+.h1{
+    color: var(--h1-white-bg);
+}
+.h2{
+    color: var(--white-text);
+}
+.h3{
+    color: var(--white-h3);
+    font-weight: 400;
+}
+.p1{
+    color: var(--per-month);
+}
+.card-padding{
+    padding: 1.5rem;
+}
+#price-div{
+    display: flex;
+    align-items: center;
+}
+#price-div h2{
+    margin-right: 1rem;
+}
+.br1{
+    border-radius: 5px 5px 0 0;
+}
+.br2{
+    border-radius: 0 0 5px 5px;
+}
+
+/* spacings */
+.card-space34{
+    margin-top: 2rem;
+}
+.card-space28{
+    margin-top: 1.75rem;
+}
+.card-space16{
+    margin-top: 1rem;
+}
+.card-space10{
+    margin-top: 0.6rem;
+}
+
+/* Colors */
+.bg-whyus{
+    background-color: var(--bg-why-us);
+}
+.bg-monthly{
+    background-color: var(--bg-monthly);
+}
+.bg-join{
+    background-color: #fff;
+}
+.h2g{
+    color: var(--gray-text);
+    line-height: 2rem;
+}
+.h2-green{
+    color: var(--btn-h2);
+}
+
+/* Font Sizes */
+.font10{
+    font-size: 0.9rem;
+}
+.font12{
+    font-size: 0.8rem;
+}
+.font16{
+    font-size: 1.2rem;
+}
+.font24{
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width:800px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0 0;
+    }
+    main{
+        width: 50%;
+    }
+    .flex-div{
+        display: flex;
+    }
+    .bg-whyus{
+        width: 50%;
+    }
+    .bg-monthly{
+        width: 50%;
+    }
+    .br3{
+        border-radius: 0 0 0 5px;
+    }
+    .br2{
+        border-radius: 0 0 5px 0;
+    }
+}
