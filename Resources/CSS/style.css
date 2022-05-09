@@ -21,7 +21,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(189, 203, 209);
+    background-color: hsl(200, 100%, 95%);
     margin: 2rem 0;
 }
 main{
